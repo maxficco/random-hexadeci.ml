@@ -1,1 +1,50 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Random Hexadeci.ml</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://fornaxvoid.com/colorpalettes/BBCMicro-palette.png"
+    />
+    
+  </head>
+  <body>
+    <div class="split left" id="ayy">
+      <div class="centered">
+        <button class="mainbutton" id="one" onclick="colorfunc1()"></button>
+        <p id="text1" onclick="searchfunc1()">(Click the hex codes to get a new color!)</p>
+      </div>
+    </div>
+
+    <div class="split middle" id="bee">
+      <div class="centered">
+        <button class="mainbutton" id="two" onclick="colorfunc2()"></button>
+        <p id="text2" onclick="searchfunc2()">(Or, press space for a random palette!)</p>
+      </div>
+    </div>
+
+    <div class="split right" id="see">
+      <div class="centered">
+        <button class="mainbutton" id="three" onclick="colorfunc3()"></button>
+        <p id="text3" onclick="searchfunc3()">(Share your palette with a custom link!)</p>
+      </div>
+    </div>
+    <footer>
+      <button id="button2" onclick="sharefunc()">Share Your Colors!</button>
+    </footer>
+    <textarea id="hide"></textarea>
+  </body>
+</html>
+
