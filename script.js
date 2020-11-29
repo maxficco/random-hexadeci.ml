@@ -1712,7 +1712,7 @@ var ColorCode = "#008559";
 let urlString;
 let color1 = "ffffff";
 let color2 = "cccccc";
-let color3 = "919191";
+let color3 = "aaaaaa";
 document.getElementById("one").innerHTML = "#" + color1;
 document.getElementById("ayy").style.backgroundColor = "#" + color1;
 document.getElementById("two").innerHTML = "#" + color2;
