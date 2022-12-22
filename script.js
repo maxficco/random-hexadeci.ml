@@ -1710,83 +1710,83 @@ var ColorCode = "#008559";
 
 
 let urlString;
-let color1 = "ffffff";
-let color2 = "cccccc";
-let color3 = "aaaaaa";
-document.getElementById("one").innerHTML = "#" + color1;
-document.getElementById("ayy").style.backgroundColor = "#" + color1;
-document.getElementById("two").innerHTML = "#" + color2;
-document.getElementById("bee").style.backgroundColor = "#" + color2;
-document.getElementById("three").innerHTML = "#" + color3;
-document.getElementById("see").style.backgroundColor = "#" + color3;
+let c1 = "ffffff";
+let c2 = "cccccc";
+let c3 = "aaaaaa";
+document.getElementById("one").innerHTML = "#" + c1;
+document.getElementById("ayy").style.backgroundColor = "#" + c1;
+document.getElementById("two").innerHTML = "#" + c2;
+document.getElementById("bee").style.backgroundColor = "#" + c2;
+document.getElementById("three").innerHTML = "#" + c3;
+document.getElementById("see").style.backgroundColor = "#" + c3;
 
 urlString =
-  "https://random-hexadeci.ml?color1=" +
-  color1 +
-  "&color2=" +
-  color2 +
-  "&color3=" +
-  color3;
+  "https://random-hexadeci.ml?c1=" +
+  c1 +
+  "&c2=" +
+  c2 +
+  "&c3=" +
+  c3;
 document.getElementById("hide").innerHTML = urlString;
 
 function colorfunc1() {
   var letters = "0123456789ABCDEF";
-  color1 = "";
+  c1 = "";
   for (var i = 0; i < 6; i++) {
-    color1 += letters[Math.floor(Math.random() * 16)];
+    c1 += letters[Math.floor(Math.random() * 16)];
   }
-  document.getElementById("ayy").style.backgroundColor = "#" + color1;
-  document.getElementById("one").innerHTML = "#" + color1;
+  document.getElementById("ayy").style.backgroundColor = "#" + c1;
+  document.getElementById("one").innerHTML = "#" + c1;
   urlString =
-    "https://random-hexadeci.ml?color1=" +
-    color1 +
-    "&color2=" +
-    color2 +
-    "&color3=" +
-    color3;
+    "https://random-hexadeci.ml?c1=" +
+    c1 +
+    "&c2=" +
+    c2 +
+    "&c3=" +
+    c3;
   document.getElementById("hide").innerHTML = urlString;
   console.log(urlString);
-  var ntcMatch  = ntc.name(color1);
+  var ntcMatch  = ntc.name(c1);
   document.getElementById("text1").innerHTML = ntcMatch[1];
 }
 function colorfunc2() {
   var letters = "0123456789ABCDEF";
-  color2 = "";
+  c2 = "";
   for (var i = 0; i < 6; i++) {
-    color2 += letters[Math.floor(Math.random() * 16)];
+    c2 += letters[Math.floor(Math.random() * 16)];
   }
-  document.getElementById("bee").style.backgroundColor = "#" + color2;
-  document.getElementById("two").innerHTML = "#" + color2;
+  document.getElementById("bee").style.backgroundColor = "#" + c2;
+  document.getElementById("two").innerHTML = "#" + c2;
   urlString =
-    "https://random-hexadeci.ml?color1=" +
-    color1 +
-    "&color2=" +
-    color2 +
-    "&color3=" +
-    color3;
+    "https://random-hexadeci.ml?c1=" +
+    c1 +
+    "&c2=" +
+    c2 +
+    "&c3=" +
+    c3;
   document.getElementById("hide").innerHTML = urlString;
   console.log(urlString);
-  var ntcMatch  = ntc.name(color2);
+  var ntcMatch  = ntc.name(c2);
   document.getElementById("text2").innerHTML = ntcMatch[1];
 }
 function colorfunc3() {
   var letters = "0123456789ABCDEF";
-  color3 = "";
+  c3 = "";
   for (var i = 0; i < 6; i++) {
-    color3 += letters[Math.floor(Math.random() * 16)];
+    c3 += letters[Math.floor(Math.random() * 16)];
   }
-  document.getElementById("see").style.backgroundColor = "#" + color3;
-  document.getElementById("three").innerHTML = "#" + color3;
+  document.getElementById("see").style.backgroundColor = "#" + c3;
+  document.getElementById("three").innerHTML = "#" + c3;
   urlString =
-    "https://random-hexadeci.ml?color1=" +
-    color1 +
-    "&color2=" +
-    color2 +
-    "&color3=" +
-    color3;
+    "https://random-hexadeci.ml?c1=" +
+    c1 +
+    "&c2=" +
+    c2 +
+    "&c3=" +
+    c3;
   document.getElementById("hide").innerHTML = urlString;
   console.log(urlString);
-  var ntcMatch  = ntc.name(color3);
+  var ntcMatch  = ntc.name(c3);
   document.getElementById("text3").innerHTML = ntcMatch[1];
 }
 
@@ -1795,28 +1795,28 @@ if (queryString == "") {
   // do nothing
 } else {
   const urlParams = new URLSearchParams(queryString);
-  color1 = urlParams.get("color1");
-  color2 = urlParams.get("color2");
-  color3 = urlParams.get("color3");
-  document.getElementById("one").innerHTML = "#" + color1;
-  document.getElementById("ayy").style.backgroundColor = "#" + color1;
-  document.getElementById("two").innerHTML = "#" + color2;
-  document.getElementById("bee").style.backgroundColor = "#" + color2;
-  document.getElementById("three").innerHTML = "#" + color3;
-  document.getElementById("see").style.backgroundColor = "#" + color3;
+  c= urlParams.get("c1");
+  c2 = urlParams.get("c2");
+  c3 = urlParams.get("c3");
+  document.getElementById("one").innerHTML = "#" + c1;
+  document.getElementById("ayy").style.backgroundColor = "#" + c1;
+  document.getElementById("two").innerHTML = "#" + c2;
+  document.getElementById("bee").style.backgroundColor = "#" + c2;
+  document.getElementById("three").innerHTML = "#" + c3;
+  document.getElementById("see").style.backgroundColor = "#" + c3;
   urlString =
-    "https://random-hexadeci.ml?color1=" +
-    color1 +
-    "&color2=" +
-    color2 +
-    "&color3=" +
-    color3;
+    "https://random-hexadeci.ml?c1=" +
+    c1 +
+    "&c2=" +
+    c2 +
+    "&c3=" +
+    c3;
   document.getElementById("hide").innerHTML = urlString;
-  var ntcMatch  = ntc.name(color1);
+  var ntcMatch  = ntc.name(c1);
   document.getElementById("text1").innerHTML = ntcMatch[1];
-  var ntcMatch  = ntc.name(color2);
+  var ntcMatch  = ntc.name(c2);
   document.getElementById("text2").innerHTML = ntcMatch[1];
-  var ntcMatch  = ntc.name(color3);
+  var ntcMatch  = ntc.name(c3);
   document.getElementById("text3").innerHTML = ntcMatch[1];
 }
 
@@ -1826,7 +1826,7 @@ function sharefunc() {
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
   alert(
-    `Copied Your Custom Hex Code link!  (#${color1}, #${color2}, and #${color3})`
+    `Copied Your Custom Hex Code link!  (#${c1}, #${c2}, and #${c3})`
   );
 }
 
