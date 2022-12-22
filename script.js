@@ -1826,7 +1826,7 @@ function sharefunc() {
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
   alert(
-    `Copied Your Custom Hex Code link!  (${ntc.name(c1)}, ${ntc.name(c2)}, and ${ntc.name(c3)})`
+    `Copied Your Custom Hex Code link!  (${ntc.name(c1)[1]}, ${ntc.name(c2)[1]}, and ${ntc.name(c3)[1]})`
   );
 }
 
