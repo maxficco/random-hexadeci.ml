@@ -1795,7 +1795,7 @@ if (queryString == "") {
   // do nothing
 } else {
   const urlParams = new URLSearchParams(queryString);
-  c= urlParams.get("c1");
+  c1 = urlParams.get("c1");
   c2 = urlParams.get("c2");
   c3 = urlParams.get("c3");
   document.getElementById("one").innerHTML = "#" + c1;
